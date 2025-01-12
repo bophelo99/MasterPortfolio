@@ -10,6 +10,7 @@ import Projects from "../pages/projects/Projects";*/
 import { settings } from "../portfolio.js";
 //import Error404 from "../pages/errors/error404/Error";
 
+//This is the first stage structure of we portfolio
 export default class Main extends Component {
   render() {
     return (
