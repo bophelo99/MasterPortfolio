@@ -23,7 +23,7 @@
   </a>
 </p>
 
-:star: Star us on GitHub — it helps!
+:star: Star me on GitHub — it helps!
 
 # Sections 📚
 
@@ -34,7 +34,7 @@
 ✔️ Certifications 🏆\
 ✔️ Blogs\
 ✔️ Education\
-✔️ Contact me\
+✔️ Contact me
 
 # Clone and Use 📋
 
@@ -49,8 +49,9 @@ for HTTPS:
  git clone https://github.com/bophilo99/masterPortfolio.git
 ```
 
-Or
-For SSH:
+                                or\
+
+for SSH:
 
 ```bash
  git clone git@github.com:bophelo99/masterPortfolio.git
