@@ -49,7 +49,7 @@ for HTTPS:
  git clone https://github.com/bophilo99/masterPortfolio.git
 ```
 
-                                or\
+                                or
 
 for SSH:
 
@@ -67,3 +67,138 @@ for SSH:
 # Customize it to make your own portfolio ✏️
 
 In this project, there are basically 4 things that you need to change to customize this to anyone else's portfolio: **package.json**, **Personal Information**, **Github Information** and **Splash Logo**.
+
+### package.json
+
+Open this file, which is in the main cloned directory, choose any "name" and change "homepage " to `https://<your-github-username>.github.io`. Do not forget the `https://`, otherwise fonts will not load.
+
+### Personal Information
+
+You will find `src/portfolio.js` file which contains the complete information about the user. The file looks something like below:
+
+```javascript
+// Home Page
+const greeting = {
+    ...
+}
+
+// Social Media
+const socialMediaLinks = {
+    ...
+}
+
+...
+```
+
+You can change the personal information, experience, education, social media, certifications, blog information, contact information etc. in `src/portfolio.js` to directly reflect them in portfolio website.
+
+### How to change the icons on homepage under what i do section?
+
+1. This section pulls data from `skills` in portfolio.js file.
+2. Visit this website: https://icon-sets.iconify.design/
+3. Search for the skill you are looking to add.
+4. Select the icon of your choice.
+5. Copy the text beside **Selected Icon** and replace it with `fontAwesomeClassName` of that particular softwareSkill.
+
+#### How to use custom images instead of Iconify Icons?
+
+1. Add a valid image file into the `public/skills` folder
+2. Insert the image name into the `imageSrc` attribute of the particular softwareSkill
+3. Remove the `fontAwesomeClassName` property or leave it empty because it takes precedence over `imageSrc`
+4. Add custom styling to the `img` using the `style` Property
+
+### Github Information
+
+You will find `git_data_fetcher.mjs` file in the main directory of the repository. This file is used to fetch the data (Pull requests, Issues, Organizations, Pinned projects etc.) from your github.
+
+In the project you will see a `env.example` file, create a new file named `.env` and copy contents of `env.example` into it. In that file, you will see the following environment variables
+
+```javascript
+GITHUB_TOKEN = your_token;
+GITHUB_USERNAME = your_username;
+```
+
+You can get a github token as described [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). Give all permissions while generating token. Add your github username and the token generated in `GITHUB_USERNAME` and `GITHUB_TOKEN` variables in the .env file.
+
+Now, you need to run following command. (Make sure you executed `npm install` before this)
+
+**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
+
+```node
+node git_data_fetcher.mjs
+```
+
+This will fetch all the data from your github and it will automatically replace my data with yours.
+Whenever you want to update the github related information on the website you need to run this command.
+
+## Other
+
+- You need to change the website title and other descriptions in `public/index.html`
+- You can define your own favicon in `public/icons` directory. If you don't have a favicon, you can generate favicons from [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
+- You can also edit your website preview (known as description image). Run your site locally, take a screenshot and replace with `public/icons/desc.png`. Note that your screenshot should be 1280x640 for better preview.
+
+# Choose Theme 🌈
+
+- You can take a look at `src/theme.js` file where all available themes are mentioned with their respective color codes
+- At the bottom of this file you will see the below code:
+  - `export const chosenTheme = blueTheme;`
+  - You need to change the name from `blueTheme` to whatever theme you want to set your website to
+  - You can define new theme similarly as other themes and you can assign name of that new defined theme to `chosenTheme`
+- That's it. You just need to change the theme name and the code will take care of everything else
+- Run `npm start` to check if everything is ok.
+
+# Deployment 📦
+
+- Once you are done with your setup and have successfully completed all steps above, you need to put your website online!
+- I highly recommend using [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to achieve this the EASIEST WAY.
+- To deploy your website, you have two options. First you need to create a github repository with the name `<your-github-username>.github.io`. Please don't give it any other name.
+- Now, you need to generate a production build and deploy the website.
+
+**Option 1:**
+
+- Run `npm run build` to generate the production build folder.
+- Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository on github. That's it. It's Done.
+- You may need to `git init` and force push at every new build.
+
+**Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
+
+- Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
+- The last step in deploying is to enable `Github Pages` in settings of the repository and select `gh-pages` branch.
+
+Now, your website is successfully deployed and you can visit it at `<your-github-username>.github.io`.
+
+# Technologies used 🛠️
+
+- [React](https://reactjs.org/)
+- [graphql](https://graphql.org/)
+- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
+- [baseui](https://github.com/uber/baseweb)
+- [react-reveal](https://www.react-reveal.com/)
+- [styled-components](https://styled-components.com/)
+
+# illustrations 🍥
+
+- [UnDraw](https://undraw.co/illustrations)
+
+# Author ✨
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://bophelo99.github.io"><img src="https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4" width="100px;" alt="Bophilo Ntsemi"/><br /><sub><b>Bophelo Ntsemi</b></sub></a><br /><a href="https://github.com/bophelo99/masterPortfolio/commits?author=bophelo99" title="Code">💻</a> <a href="https://github.com/bophelo99/masterPortfolio/commits?author=bophelo99" title="Documentation">📖</a> <a href="#design-bophelo99" title="Design">🎨</a> <a href="#maintenance-bophelo99" title="Maintenance">🚧</a> <a href="#ideas-bophelo99" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+# References 👏🏻
+
+- Yhe dashboard Design and Implementation is inspired by open project from [Saad Pasta's Portfolio Project](https://github.com/saadpasta/developerFolio).
+- The Logo of MasterPortfolio is inspired from [prettier-logo](https://github.com/prettier/prettier-logo) for [prettier](https://github.com/prettier/prettier) designed by @ianstormtaylor.
