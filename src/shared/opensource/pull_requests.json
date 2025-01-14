@@ -1,0 +1,79 @@
+{
+  "closed": 1,
+  "data": [
+    {
+      "id": "PR_kwDOMIyk3c5yUxBQ",
+      "title": "Bug fix revert",
+      "url": "https://github.com/bophelo99/jbbmo-Introduction-to-Git-and-GitHub/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+        "url": "https://github.com/bophelo99",
+        "login": "bophelo99"
+      },
+      "createdAt": "2024-06-13T07:44:02Z",
+      "number": 2,
+      "changedFiles": 0,
+      "additions": 0,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "jbbmo-Introduction-to-Git-and-GitHub",
+        "url": "https://github.com/bophelo99/jbbmo-Introduction-to-Git-and-GitHub",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+          "login": "bophelo99",
+          "url": "https://github.com/bophelo99"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMIyk3c5yUp3K",
+      "title": "fix footer",
+      "url": "https://github.com/bophelo99/jbbmo-Introduction-to-Git-and-GitHub/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+        "url": "https://github.com/bophelo99",
+        "login": "bophelo99"
+      },
+      "createdAt": "2024-06-13T07:27:47Z",
+      "number": 1,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "jbbmo-Introduction-to-Git-and-GitHub",
+        "url": "https://github.com/bophelo99/jbbmo-Introduction-to-Git-and-GitHub",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+          "login": "bophelo99",
+          "url": "https://github.com/bophelo99"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOGqp3Ec5xJzEx",
+      "title": " merge operation",
+      "url": "https://github.com/ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub/pull/30491",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2024-05-31T17:53:27Z",
+      "number": 30491,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "jbbmo-Introduction-to-Git-and-GitHub",
+        "url": "https://github.com/ibm-developer-skills-network/jbbmo-Introduction-to-Git-and-GitHub",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/70551872?v=4",
+          "login": "ibm-developer-skills-network",
+          "url": "https://github.com/ibm-developer-skills-network"
+        }
+      }
+    }
+  ],
+  "merged": 2,
+  "open": 0,
+  "totalCount": 3
+}
