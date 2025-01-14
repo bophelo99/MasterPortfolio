@@ -1,6 +1,33 @@
 {
-  "closed": 0,
-  "data": [],
+  "closed": 1,
+  "data": [
+    {
+      "id": "I_kwDONnH3xc6l2lfr",
+      "closed": true,
+      "title": "first MVP ",
+      "createdAt": "2025-01-12T15:41:53Z",
+      "url": "https://github.com/bophelo99/masterPortfolio/issues/3",
+      "number": 3,
+      "assignees": {
+        "nodes": [
+          {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+            "name": "bophelo",
+            "url": "https://github.com/bophelo99"
+          }
+        ]
+      },
+      "repository": {
+        "name": "masterPortfolio",
+        "url": "https://github.com/bophelo99/masterPortfolio",
+        "owner": {
+          "login": "bophelo99",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/68306386?u=cb4c9c4465193fd2579a76799101ec0c73c632d6&v=4",
+          "url": "https://github.com/bophelo99"
+        }
+      }
+    }
+  ],
   "open": 0,
-  "totalCount": 0
+  "totalCount": 1
 }
